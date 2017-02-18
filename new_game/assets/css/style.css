@@ -1,0 +1,43 @@
+body{
+  background: black;
+}
+canvas{
+  background-position: center;
+  border:grey;
+/*  border-style: outset;
+*/  margin-left: 250px;
+  margin-top: 70px;
+}
+#landscape{
+  border-bottom:black;
+  max-width: 100%;
+}
+h2{
+  text-align: center;
+  margin-top: 60px;
+  font-family: 'VT323', monospace;
+  color: white;
+}
+#play{
+/*  margin-left: 450px;
+*/}
+a{
+  font-family: 'VT323', monospace;
+}
+#homepage,
+#restart{
+  top:15px;
+
+}
+img{
+  width: 100%;
+  background-repeat: no-repeat;
+}
+canvas{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+}
