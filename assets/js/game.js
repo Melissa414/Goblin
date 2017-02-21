@@ -10,7 +10,7 @@ var bgImage = new Image();
 bgImage.onload = function () {
   bgReady = true;
 };
-bgImage.src = "css/images/background.png";
+bgImage.src = "../assets/css/images/background.png";
 
 //warrior
 var heroReady = false;
@@ -18,7 +18,7 @@ var heroImage = new Image();
 heroImage.onload = function () {
   heroReady = true;
 };
-heroImage.src = "css/images/warrior.png";
+heroImage.src = "../assets/css/images/warrior.png";
 
 //goblin
 var monsterReady = false;
@@ -26,7 +26,7 @@ var monsterImage = new Image();
 monsterImage.onload = function () {
   monsterReady = true;
 };
-monsterImage.src = "css/images/goblin.png";
+monsterImage.src = "../assets/css/images/goblin.png";
 
 //objects
 var hero = {
@@ -99,7 +99,7 @@ var render = function () {
     ctx.drawImage(monsterImage, monster.x, monster.y);
   }
 
- 
+
   ctx.fillStyle = "rgb(250, 250, 250)";
   ctx.font = "24px monospace";
   ctx.textAlign = "left";
