@@ -10,7 +10,7 @@ var bgImage = new Image();
 bgImage.onload = function () {
   bgReady = true;
 };
-bgImage.src = "../assets/css/images/background.png";
+bgImage.src = "assets/css/images/background.png";
 
 //warrior
 var heroReady = false;
@@ -18,7 +18,7 @@ var heroImage = new Image();
 heroImage.onload = function () {
   heroReady = true;
 };
-heroImage.src = "../assets/css/images/warrior.png";
+heroImage.src = "assets/css/images/warrior.png";
 
 //goblin
 var monsterReady = false;
@@ -26,7 +26,7 @@ var monsterImage = new Image();
 monsterImage.onload = function () {
   monsterReady = true;
 };
-monsterImage.src = "../assets/css/images/goblin.png";
+monsterImage.src = "assets/css/images/goblin.png";
 
 //objects
 var hero = {
@@ -48,8 +48,9 @@ addEventListener("keyup", function (e) {
 
 //reset
 var reset = function () {
-  hero.x = canvas.width / 2;
-  hero.y = canvas.height / 2;
+  hero.x = canvas.width / 4;
+  hero.y = canvas.height / 4;
+
 
 
 //randomize
@@ -128,10 +129,3 @@ requestAnimationFrame = w.requestAnimationFrame || w.webkitRequestAnimationFrame
 var then = Date.now();
 reset();
 main();
-
-// $('#restart').click(function() {
-//   var restart = score;
-//   if(score < 30){
-//     restart();
-//   }
-// });
